@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="profile" href="https://gmpg.org/xfn/11">
+  	<title>vibeGenX - Lead Generation & Live Transfers</title>
+<meta name="robots" content="index, follow">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<meta name="description" content="vibeGenX - Lead Generation & Live Transfers 24/7. We offer exceptional B2C and B2B lead generation services.">
+	
+	<style>
+		/* ===== BASIC RESET & FONTS ===== */
+		* { margin:0; padding:0; box-sizing:border-box; }
+		body { font-family: 'Open Sans', Arial, sans-serif; background:#f9f9f9; color:#333; line-height:1.6; }
+		a { text-decoration:none; color:#B0963F; }
+		a:hover { color:#8a752f; }
+		.container { max-width:1200px; margin:0 auto; padding:0 15px; }
+		
+		/* ===== HEADER ===== */
+		.header { background:linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding:15px 0; border-bottom:3px solid #B0963F; }
+		.header-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+		.logo img { max-height:55px; }
+		.nav-menu { display:flex; gap:25px; flex-wrap:wrap; }
+		.nav-menu a { color:#fff; font-weight:600; font-size:15px; transition:0.3s; }
+		.nav-menu a:hover { color:#B0963F; }
+		.btn-crm { background:#B0963F; color:#fff !important; padding:8px 22px; border-radius:30px; font-weight:700; }
+		.btn-crm:hover { background:#8a752f; }
+		
+		/* ===== HERO SECTION ===== */
+		.hero { background:linear-gradient(135deg, #f5f0e8 0%, #e8e0d2 100%); padding:80px 0; }
+		.hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; }
+		.hero-text .sub-title { color:#B0963F; font-weight:700; letter-spacing:2px; font-size:14px; text-transform:uppercase; }
+		.hero-text h1 { font-size:42px; font-weight:800; line-height:1.2; margin:15px 0; }
+		.hero-text h1 span { color:#B0963F; }
+		.hero-text p { font-size:18px; color:#555; margin-bottom:20px; }
+		.hero-text ul { list-style:none; padding:0; }
+		.hero-text ul li { padding:6px 0; font-size:16px; }
+		.hero-text ul li i { color:#B0963F; margin-right:10px; }
+		.hero-btn { display:inline-block; background:#B0963F; color:#fff; padding:12px 35px; border-radius:30px; font-weight:700; margin-top:15px; transition:0.3s; }
+		.hero-btn:hover { background:#8a752f; color:#fff; }
+		.hero-image { text-align:center; }
+		.hero-image img { max-width:100%; border-radius:15px; box-shadow:0 15px 40px rgba(0,0,0,0.1); }
+		
+		/* ===== SERVICES ===== */
+		.services { padding:70px 0; background:#fff; }
+		.section-title { text-align:center; margin-bottom:50px; }
+		.section-title h2 { font-size:34px; font-weight:800; color:#222; }
+		.section-title h2 span { color:#B0963F; }
+		.section-title p { color:#666; max-width:600px; margin:10px auto 0; }
+		.services-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:25px; }
+		.service-card { background:#f8f6f2; padding:30px 20px; border-radius:12px; text-align:center; transition:0.3s; border-bottom:4px solid transparent; }
+		.service-card:hover { border-bottom-color:#B0963F; transform:translateY(-5px); box-shadow:0 10px 30px rgba(0,0,0,0.05); }
+		.service-card .icon { font-size:38px; color:#B0963F; margin-bottom:15px; }
+		.service-card h3 { font-size:18px; margin-bottom:8px; color:#222; }
+		.service-card p { font-size:14px; color:#666; }
+		
+		/* ===== FAQ ===== */
+		.faq-section { padding:70px 0; background:#f5f0e8; }
+		.faq-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
+		.faq-item { background:#fff; padding:18px 22px; margin-bottom:12px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.04); cursor:pointer; border-left:4px solid #B0963F; }
+		.faq-item h4 { font-size:16px; color:#222; }
+		.faq-item p { font-size:14px; color:#555; margin-top:6px; display:none; }
+		.faq-item.active p { display:block; }
+		
+		/* ===== PARTNERS ===== */
+		.partners { padding:50px 0; background:#fff; text-align:center; }
+		.partner-logos { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:25px; }
+		.partner-logos img { max-height:50px; opacity:0.7; transition:0.3s; filter:grayscale(100%); }
+		.partner-logos img:hover { opacity:1; filter:grayscale(0); }
+		
+		/* ===== CONTACT ===== */
+		.contact-bar { background:linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding:40px 0; color:#fff; text-align:center; }
+		.contact-bar h2 { font-size:28px; margin-bottom:10px; }
+		.contact-bar h2 span { color:#B0963F; }
+		.contact-info { display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:15px; }
+		.contact-info div { font-size:16px; }
+		.contact-info i { color:#B0963F; margin-right:8px; }
+		
+		/* ===== FOOTER ===== */
+		.footer { background:#1a1a1a; color:#ccc; padding:50px 0 20px; }
+		.footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:30px; }
+		.footer h3 { color:#fff; font-size:18px; margin-bottom:15px; border-bottom:2px solid #B0963F; padding-bottom:8px; display:inline-block; }
+		.footer ul { list-style:none; padding:0; }
+		.footer ul li { padding:5px 0; }
+		.footer ul li a { color:#aaa; transition:0.3s; }
+		.footer ul li a:hover { color:#B0963F; }
+		.footer-bottom { text-align:center; padding-top:25px; border-top:1px solid #333; margin-top:30px; font-size:14px; color:#777; }
+		
+		/* ===== RESPONSIVE ===== */
+		@media (max-width:768px) {
+			.hero-grid { grid-template-columns:1fr; text-align:center; }
+			.hero-text h1 { font-size:28px; }
+			.nav-menu { gap:12px; justify-content:center; margin-top:10px; }
+			.header-inner { flex-direction:column; }
+			.faq-grid { grid-template-columns:1fr; }
+			.contact-info { flex-direction:column; gap:10px; }
+		}
+	</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+	<div class="container header-inner">
+		<div class="logo">
+			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='50' viewBox='0 0 200 50'%3E%3Ctext x='0' y='35' font-family='Arial' font-size='28' font-weight='bold' fill='%23B0963F'%3EvibeGenX%3C/text%3E%3C/svg%3E" alt="vibeGenX Logo">
+		</div>
+		<nav class="nav-menu">
+			<a href="#">Home</a>
+			<a href="#">Leads</a>
+			<a href="#">Pricing</a>
+			<a href="#">Blog</a>
+			<a href="#">Contact</a>
+			<a href="#" class="btn-crm">CRM Login</a>
+		</nav>
+	</div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+	<div class="container hero-grid">
+		<div class="hero-text">
+			<div class="sub-title">About vibeGenX</div>
+			<h1>Lead Generation &amp; <span>Live Transfers 24/7</span></h1>
+			<p>We offer exceptional lead generation and outsourcing services, positioning us as the foremost provider of B2C and B2B leads in the USA.</p>
+			<ul>
+				<li><i>?</i> Qualified Leads &amp; Live Transfer, Quality is Our Priority</li>
+				<li><i>?</i> Free marketing training and unparalleled Tech support</li>
+			</ul>
+			<a href="#" class="hero-btn">Get in Contact</a>
+		</div>
+		<div class="hero-image">
+			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e8e0d2'/%3E%3Ctext x='80' y='160' font-family='Arial' font-size='24' fill='%23999999'%3ECall Center Image%3C/text%3E%3C/svg%3E" alt="vibeGenX Call Center">
+		</div>
+	</div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services">
+	<div class="container">
+		<div class="section-title">
+			<h2>Leads we offer are <span>verified and exclusive</span></h2>
+			<p>We provide real-time, exclusive leads across multiple insurance verticals.</p>
+		</div>
+		<div class="services-grid">
+			<div class="service-card"><div class="icon">??</div><h3>Auto Insurance Leads</h3><p>High-intent consumers actively seeking auto insurance.</p></div>
+			<div class="service-card"><div class="icon">??</div><h3>Home Insurance Leads</h3><p>Top-notch home insurance leads and calls.</p></div>
+			<div class="service-card"><div class="icon">??</div><h3>Final Expense Leads</h3><p>Consumers interested in final expense insurance.</p></div>
+			<div class="service-card"><div class="icon">??</div><h3>Health Insurance Leads</h3><p>Genuinely interested health insurance consumers.</p></div>
+			<div class="service-card"><div class="icon">??</div><h3>Medicare Leads</h3><p>Medicare agents drive success with our leads.</p></div>
+			<div class="service-card"><div class="icon">??</div><h3>ACA Insurance Leads</h3><p>Find the best ACA plan for your needs.</p></div>
+			<div class="service-card"><div class="icon">???</div><h3>MVA Insurance Leads</h3><p>Explore MVA insurance options with our leads.</p></div>
+			<div class="service-card"><div class="icon">??</div><h3>Home Warranty Leads</h3><p>Real-time leads matched to your exact filters.</p></div>
+		</div>
+	</div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section">
+	<div class="container faq-grid">
+		<div>
+			<div class="section-title" style="text-align:left;">
+				<h2>Get Your <span>Questions Answered</span></h2>
+			</div>
+			<div class="faq-item active"><h4>How are our insurance leads generated?</h4><p>We employ online marketing, targeted ads, and partnerships with trusted platforms to generate high-quality insurance leads.</p></div>
+			<div class="faq-item"><h4>What is the quality of our insurance leads?</h4><p>We use multiple data points and filters to assess interest, demographics, and needs, delivering leads with higher conversion likelihood.</p></div>
+			<div class="faq-item"><h4>How do we ensure exclusivity of leads?</h4><p>Once a lead is sold, it's immediately withdrawn from our pool, ensuring no competition for your agency.</p></div>
+			<div class="faq-item"><h4>What is our pricing structure?</h4><p>We operate on a per-lead basis, with pricing based on insurance type, exclusivity, and volume.</p></div>
+		</div>
+		<div>
+			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Crect width='500' height='400' fill='%23d4c9b5'/%3E%3Ctext x='150' y='200' font-family='Arial' font-size='24' fill='%23999999'%3EFAQ Illustration%3C/text%3E%3C/svg%3E" alt="FAQ" style="max-width:100%;border-radius:12px;">
+		</div>
+	</div>
+</section>
+
+<!-- ===== PARTNERS ===== -->
+<section class="partners">
+	<div class="container">
+		<h2 style="font-size:28px; font-weight:700;">Our <span style="color:#B0963F;">Partners</span></h2>
+		<p style="color:#666; margin-bottom:10px;">Companies we have worked with</p>
+		<div class="partner-logos">
+			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' fill='%23eee'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='14' fill='%23999'%3EPartner 1%3C/text%3E%3C/svg%3E" alt="Partner">
+			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' fill='%23eee'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='14' fill='%23999'%3EPartner 2%3C/text%3E%3C/svg%3E" alt="Partner">
+			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' fill='%23eee'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='14' fill='%23999'%3EPartner 3%3C/text%3E%3C/svg%3E" alt="Partner">
+			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' fill='%23eee'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='14' fill='%23999'%3EPartner 4%3C/text%3E%3C/svg%3E" alt="Partner">
+		</div>
+	</div>
+</section>
+
+<!-- ===== CONTACT BAR ===== -->
+<section class="contact-bar">
+	<div class="container">
+		<h2>Get In <span>Touch</span></h2>
+		<div class="contact-info">
+			<div><i>??</i> +1 (917) 720-3759</div>
+			<div><i>??</i> info@vibeGenX.com</div>
+			<div><i>??</i> Olive Street, Evansville, Indiana 47714</div>
+		</div>
+	</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div>
+				<h3>About Us</h3>
+				<p style="color:#aaa; font-size:14px;">vibeGenX is a premier lead generation provider delivering exclusive B2C and B2B leads across the USA.</p>
+			</div>
+			<div>
+				<h3>Services</h3>
+				<ul>
+					<li><a href="#">Auto Insurance Leads</a></li>
+					<li><a href="#">Home Insurance Leads</a></li>
+					<li><a href="#">Health Insurance Leads</a></li>
+					<li><a href="#">Medicare Leads</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Blogs</h3>
+				<ul>
+					<li><a href="#">Maximizing Lead Generation</a></li>
+					<li><a href="#">Quality Over Quantity</a></li>
+					<li><a href="#">Emerging Trends in Insurance</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Company</h3>
+				<ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Lead Pricing</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			All Rights Reserved © Copyright 2025 | vibeGenX
+		</div>
+	</div>
+</footer>
+
+<script>
+	// Simple FAQ Toggle
+	document.querySelectorAll('.faq-item').forEach(item => {
+		item.addEventListener('click', function() {
+			this.classList.toggle('active');
+		});
+	});
+</script>
+
+</body>
+</html>
