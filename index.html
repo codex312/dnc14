@@ -1,254 +1,1374 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="profile" href="https://gmpg.org/xfn/11">
-  	<title>vibeGenX - Lead Generation & Live Transfers</title>
-<meta name="robots" content="index, follow">
-	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
-	<meta name="description" content="vibeGenX - Lead Generation & Live Transfers 24/7. We offer exceptional B2C and B2B lead generation services.">
-	
-	<style>
-		/* ===== BASIC RESET & FONTS ===== */
-		* { margin:0; padding:0; box-sizing:border-box; }
-		body { font-family: 'Open Sans', Arial, sans-serif; background:#f9f9f9; color:#333; line-height:1.6; }
-		a { text-decoration:none; color:#B0963F; }
-		a:hover { color:#8a752f; }
-		.container { max-width:1200px; margin:0 auto; padding:0 15px; }
-		
-		/* ===== HEADER ===== */
-		.header { background:linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding:15px 0; border-bottom:3px solid #B0963F; }
-		.header-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
-		.logo img { max-height:55px; }
-		.nav-menu { display:flex; gap:25px; flex-wrap:wrap; }
-		.nav-menu a { color:#fff; font-weight:600; font-size:15px; transition:0.3s; }
-		.nav-menu a:hover { color:#B0963F; }
-		.btn-crm { background:#B0963F; color:#fff !important; padding:8px 22px; border-radius:30px; font-weight:700; }
-		.btn-crm:hover { background:#8a752f; }
-		
-		/* ===== HERO SECTION ===== */
-		.hero { background:linear-gradient(135deg, #f5f0e8 0%, #e8e0d2 100%); padding:80px 0; }
-		.hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; }
-		.hero-text .sub-title { color:#B0963F; font-weight:700; letter-spacing:2px; font-size:14px; text-transform:uppercase; }
-		.hero-text h1 { font-size:42px; font-weight:800; line-height:1.2; margin:15px 0; }
-		.hero-text h1 span { color:#B0963F; }
-		.hero-text p { font-size:18px; color:#555; margin-bottom:20px; }
-		.hero-text ul { list-style:none; padding:0; }
-		.hero-text ul li { padding:6px 0; font-size:16px; }
-		.hero-text ul li i { color:#B0963F; margin-right:10px; }
-		.hero-btn { display:inline-block; background:#B0963F; color:#fff; padding:12px 35px; border-radius:30px; font-weight:700; margin-top:15px; transition:0.3s; }
-		.hero-btn:hover { background:#8a752f; color:#fff; }
-		.hero-image { text-align:center; }
-		.hero-image img { max-width:100%; border-radius:15px; box-shadow:0 15px 40px rgba(0,0,0,0.1); }
-		
-		/* ===== SERVICES ===== */
-		.services { padding:70px 0; background:#fff; }
-		.section-title { text-align:center; margin-bottom:50px; }
-		.section-title h2 { font-size:34px; font-weight:800; color:#222; }
-		.section-title h2 span { color:#B0963F; }
-		.section-title p { color:#666; max-width:600px; margin:10px auto 0; }
-		.services-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:25px; }
-		.service-card { background:#f8f6f2; padding:30px 20px; border-radius:12px; text-align:center; transition:0.3s; border-bottom:4px solid transparent; }
-		.service-card:hover { border-bottom-color:#B0963F; transform:translateY(-5px); box-shadow:0 10px 30px rgba(0,0,0,0.05); }
-		.service-card .icon { font-size:38px; color:#B0963F; margin-bottom:15px; }
-		.service-card h3 { font-size:18px; margin-bottom:8px; color:#222; }
-		.service-card p { font-size:14px; color:#666; }
-		
-		/* ===== FAQ ===== */
-		.faq-section { padding:70px 0; background:#f5f0e8; }
-		.faq-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
-		.faq-item { background:#fff; padding:18px 22px; margin-bottom:12px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.04); cursor:pointer; border-left:4px solid #B0963F; }
-		.faq-item h4 { font-size:16px; color:#222; }
-		.faq-item p { font-size:14px; color:#555; margin-top:6px; display:none; }
-		.faq-item.active p { display:block; }
-		
-		/* ===== PARTNERS ===== */
-		.partners { padding:50px 0; background:#fff; text-align:center; }
-		.partner-logos { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:25px; }
-		.partner-logos img { max-height:50px; opacity:0.7; transition:0.3s; filter:grayscale(100%); }
-		.partner-logos img:hover { opacity:1; filter:grayscale(0); }
-		
-		/* ===== CONTACT ===== */
-		.contact-bar { background:linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding:40px 0; color:#fff; text-align:center; }
-		.contact-bar h2 { font-size:28px; margin-bottom:10px; }
-		.contact-bar h2 span { color:#B0963F; }
-		.contact-info { display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:15px; }
-		.contact-info div { font-size:16px; }
-		.contact-info i { color:#B0963F; margin-right:8px; }
-		
-		/* ===== FOOTER ===== */
-		.footer { background:#1a1a1a; color:#ccc; padding:50px 0 20px; }
-		.footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:30px; }
-		.footer h3 { color:#fff; font-size:18px; margin-bottom:15px; border-bottom:2px solid #B0963F; padding-bottom:8px; display:inline-block; }
-		.footer ul { list-style:none; padding:0; }
-		.footer ul li { padding:5px 0; }
-		.footer ul li a { color:#aaa; transition:0.3s; }
-		.footer ul li a:hover { color:#B0963F; }
-		.footer-bottom { text-align:center; padding-top:25px; border-top:1px solid #333; margin-top:30px; font-size:14px; color:#777; }
-		
-		/* ===== RESPONSIVE ===== */
-		@media (max-width:768px) {
-			.hero-grid { grid-template-columns:1fr; text-align:center; }
-			.hero-text h1 { font-size:28px; }
-			.nav-menu { gap:12px; justify-content:center; margin-top:10px; }
-			.header-inner { flex-direction:column; }
-			.faq-grid { grid-template-columns:1fr; }
-			.contact-info { flex-direction:column; gap:10px; }
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vibeGenX - Lead Generation & Live Transfers 24/7</title>
+    <meta name="description" content="vibeGenX - Premium Lead Generation & Live Transfer Services for Call Centers. B2B & B2C leads across USA.">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================================
+                   CSS RESET & BASE
+                   ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: #1a1a2e;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ============================================================
+                   BUTTONS
+                   ============================================================ */
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, #f5a623, #e8961a);
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(245, 166, 35, 0.35);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(245, 166, 35, 0.5);
+            background: linear-gradient(135deg, #e8961a, #d4880f);
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+            background: #1da851;
+        }
+
+        .btn-whatsapp i {
+            margin-right: 10px;
+        }
+
+        /* ============================================================
+                   HEADER
+                   ============================================================ */
+        .header {
+            background: #0f0f1a;
+            padding: 18px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #f5a623;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #f5a623, #e8961a);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .logo-text {
+            font-size: 26px;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            color: #f5a623;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu a {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: #f5a623;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f5a623;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: #f5a623;
+            color: #fff !important;
+            padding: 10px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+        }
+
+        .nav-cta:hover {
+            background: #e8961a;
+            color: #fff !important;
+        }
+
+        .nav-cta::after {
+            display: none !important;
+        }
+
+        /* Mobile Toggle */
+        .menu-toggle {
+            display: none;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        /* ============================================================
+                   HERO SECTION
+                   ============================================================ */
+        .hero {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(245, 166, 35, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(245, 166, 35, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(245, 166, 35, 0.15);
+            color: #f5a623;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid rgba(245, 166, 35, 0.2);
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #f5a623, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
+            max-width: 500px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin: 30px 0;
+        }
+
+        .hero-stats div {
+            color: #fff;
+        }
+
+        .hero-stats .number {
+            font-size: 32px;
+            font-weight: 900;
+            color: #f5a623;
+        }
+
+        .hero-stats .label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+
+        .hero-image-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: #fff;
+            padding: 18px 28px;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .hero-image-badge i {
+            font-size: 32px;
+            color: #f5a623;
+        }
+
+        .hero-image-badge div {
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .hero-image-badge small {
+            font-weight: 400;
+            color: #666;
+            font-size: 13px;
+        }
+
+        /* ============================================================
+                   TRUST BADGES
+                   ============================================================ */
+        .trust-bar {
+            background: #f8f6f2;
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .trust-bar-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .trust-bar-inner img {
+            height: 40px;
+            opacity: 0.5;
+            transition: 0.3s;
+            filter: grayscale(100%);
+        }
+
+        .trust-bar-inner img:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+
+        /* ============================================================
+                   SECTION TITLE
+                   ============================================================ */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title .sub {
+            color: #f5a623;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .section-title h2 {
+            font-size: 40px;
+            font-weight: 800;
+            color: #1a1a2e;
+        }
+
+        .section-title h2 span {
+            color: #f5a623;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 600px;
+            margin: 12px auto 0;
+            font-size: 17px;
+        }
+
+        /* ============================================================
+                   SERVICES
+                   ============================================================ */
+        .services {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #faf9f7;
+            padding: 35px 28px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 1px solid #f0ede8;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #f5a623, #ffd700);
+            transform: scaleX(0);
+            transition: 0.4s;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+            border-color: #f5a623;
+        }
+
+        .service-card .icon {
+            font-size: 42px;
+            color: #f5a623;
+            margin-bottom: 18px;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .service-card .learn-more {
+            display: inline-block;
+            margin-top: 15px;
+            color: #f5a623;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .service-card .learn-more i {
+            transition: 0.3s;
+        }
+
+        .service-card:hover .learn-more i {
+            transform: translateX(5px);
+        }
+
+        /* ============================================================
+                   ABOUT / FEATURES
+                   ============================================================ */
+        .about-section {
+            padding: 80px 0;
+            background: #f8f6f2;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image img {
+            border-radius: 20px;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+        }
+
+        .about-content .sub {
+            color: #f5a623;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .about-content h2 {
+            font-size: 38px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin: 12px 0 20px;
+        }
+
+        .about-content h2 span {
+            color: #f5a623;
+        }
+
+        .about-content p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            font-size: 16px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .feature-list li i {
+            color: #f5a623;
+            font-size: 20px;
+        }
+
+        /* ============================================================
+                   FAQ SECTION
+                   ============================================================ */
+        .faq-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .faq-item {
+            background: #faf9f7;
+            padding: 20px 24px;
+            margin-bottom: 14px;
+            border-radius: 12px;
+            cursor: pointer;
+            border-left: 4px solid transparent;
+            transition: 0.3s;
+            border: 1px solid #f0ede8;
+        }
+
+        .faq-item.active {
+            border-left-color: #f5a623;
+            background: #fff;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+        }
+
+        .faq-item h4 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1a1a2e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item h4 i {
+            color: #f5a623;
+            transition: 0.3s;
+            font-size: 18px;
+        }
+
+        .faq-item.active h4 i {
+            transform: rotate(180deg);
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            color: #555;
+            margin-top: 12px;
+            display: none;
+            line-height: 1.8;
+        }
+
+        .faq-item.active p {
+            display: block;
+        }
+
+        .faq-image img {
+            border-radius: 20px;
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+        }
+
+        /* ============================================================
+                   PARTNERS
+                   ============================================================ */
+        .partners-section {
+            padding: 60px 0;
+            background: #f8f6f2;
+            text-align: center;
+        }
+
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .partner-logos img {
+            height: 45px;
+            opacity: 0.5;
+            transition: 0.3s;
+            filter: grayscale(100%);
+        }
+
+        .partner-logos img:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+
+        /* ============================================================
+                   CONTACT / CTA
+                   ============================================================ */
+        .cta-section {
+            padding: 70px 0;
+            background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(245, 166, 35, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta-section h2 {
+            font-size: 38px;
+            font-weight: 800;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-section h2 span {
+            color: #f5a623;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            margin: 15px 0 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-info div {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+        }
+
+        .cta-info i {
+            color: #f5a623;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        /* ============================================================
+                   FOOTER
+                   ============================================================ */
+        .footer {
+            background: #0a0a14;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer h3 {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: #f5a623;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            padding: 6px 0;
+        }
+
+        .footer ul li a {
+            color: rgba(255, 255, 255, 0.6);
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .footer ul li a:hover {
+            color: #f5a623;
+            padding-left: 5px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.8;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.6);
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        .footer-social a:hover {
+            background: #f5a623;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            margin-top: 40px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ============================================================
+                   FLOATING WHATSAPP BUTTON
+                   ============================================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            background: #25D366;
+            color: #fff;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.6);
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* ============================================================
+                   RESPONSIVE
+                   ============================================================ */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                max-width: 100%;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-image img {
+                height: 300px;
+            }
+
+            .hero-image-badge {
+                position: relative;
+                bottom: 0;
+                right: 0;
+                margin-top: 20px;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                padding: 20px 0;
+                gap: 15px;
+            }
+
+            .nav-menu.open {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-image img {
+                height: 220px;
+            }
+
+            .about-image img {
+                height: 250px;
+            }
+
+            .faq-image img {
+                height: 250px;
+            }
+
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 28px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .btn-primary,
+            .btn-whatsapp {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="header">
-	<div class="container header-inner">
-		<div class="logo">
-			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='50' viewBox='0 0 200 50'%3E%3Ctext x='0' y='35' font-family='Arial' font-size='28' font-weight='bold' fill='%23B0963F'%3EvibeGenX%3C/text%3E%3C/svg%3E" alt="vibeGenX Logo">
-		</div>
-		<nav class="nav-menu">
-			<a href="#">Home</a>
-			<a href="#">Leads</a>
-			<a href="#">Pricing</a>
-			<a href="#">Blog</a>
-			<a href="#">Contact</a>
-			<a href="#" class="btn-crm">CRM Login</a>
-		</nav>
-	</div>
-</header>
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-icon">V</div>
+                <div class="logo-text">vibe<span>GenX</span></div>
+            </div>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-	<div class="container hero-grid">
-		<div class="hero-text">
-			<div class="sub-title">About vibeGenX</div>
-			<h1>Lead Generation &amp; <span>Live Transfers 24/7</span></h1>
-			<p>We offer exceptional lead generation and outsourcing services, positioning us as the foremost provider of B2C and B2B leads in the USA.</p>
-			<ul>
-				<li><i>?</i> Qualified Leads &amp; Live Transfer, Quality is Our Priority</li>
-				<li><i>?</i> Free marketing training and unparalleled Tech support</li>
-			</ul>
-			<a href="#" class="hero-btn">Get in Contact</a>
-		</div>
-		<div class="hero-image">
-			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e8e0d2'/%3E%3Ctext x='80' y='160' font-family='Arial' font-size='24' fill='%23999999'%3ECall Center Image%3C/text%3E%3C/svg%3E" alt="vibeGenX Call Center">
-		</div>
-	</div>
-</section>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
 
-<!-- ===== SERVICES ===== -->
-<section class="services">
-	<div class="container">
-		<div class="section-title">
-			<h2>Leads we offer are <span>verified and exclusive</span></h2>
-			<p>We provide real-time, exclusive leads across multiple insurance verticals.</p>
-		</div>
-		<div class="services-grid">
-			<div class="service-card"><div class="icon">??</div><h3>Auto Insurance Leads</h3><p>High-intent consumers actively seeking auto insurance.</p></div>
-			<div class="service-card"><div class="icon">??</div><h3>Home Insurance Leads</h3><p>Top-notch home insurance leads and calls.</p></div>
-			<div class="service-card"><div class="icon">??</div><h3>Final Expense Leads</h3><p>Consumers interested in final expense insurance.</p></div>
-			<div class="service-card"><div class="icon">??</div><h3>Health Insurance Leads</h3><p>Genuinely interested health insurance consumers.</p></div>
-			<div class="service-card"><div class="icon">??</div><h3>Medicare Leads</h3><p>Medicare agents drive success with our leads.</p></div>
-			<div class="service-card"><div class="icon">??</div><h3>ACA Insurance Leads</h3><p>Find the best ACA plan for your needs.</p></div>
-			<div class="service-card"><div class="icon">???</div><h3>MVA Insurance Leads</h3><p>Explore MVA insurance options with our leads.</p></div>
-			<div class="service-card"><div class="icon">??</div><h3>Home Warranty Leads</h3><p>Real-time leads matched to your exact filters.</p></div>
-		</div>
-	</div>
-</section>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#">Home</a>
+                <a href="#services">Leads</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav-cta">Get Started</a>
+            </nav>
+        </div>
+    </header>
 
-<!-- ===== FAQ ===== -->
-<section class="faq-section">
-	<div class="container faq-grid">
-		<div>
-			<div class="section-title" style="text-align:left;">
-				<h2>Get Your <span>Questions Answered</span></h2>
-			</div>
-			<div class="faq-item active"><h4>How are our insurance leads generated?</h4><p>We employ online marketing, targeted ads, and partnerships with trusted platforms to generate high-quality insurance leads.</p></div>
-			<div class="faq-item"><h4>What is the quality of our insurance leads?</h4><p>We use multiple data points and filters to assess interest, demographics, and needs, delivering leads with higher conversion likelihood.</p></div>
-			<div class="faq-item"><h4>How do we ensure exclusivity of leads?</h4><p>Once a lead is sold, it's immediately withdrawn from our pool, ensuring no competition for your agency.</p></div>
-			<div class="faq-item"><h4>What is our pricing structure?</h4><p>We operate on a per-lead basis, with pricing based on insurance type, exclusivity, and volume.</p></div>
-		</div>
-		<div>
-			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Crect width='500' height='400' fill='%23d4c9b5'/%3E%3Ctext x='150' y='200' font-family='Arial' font-size='24' fill='%23999999'%3EFAQ Illustration%3C/text%3E%3C/svg%3E" alt="FAQ" style="max-width:100%;border-radius:12px;">
-		</div>
-	</div>
-</section>
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="hero-badge">🔥 #1 Lead Generation</span>
+                <h1>Lead Generation &amp; <span>Live Transfers</span> 24/7</h1>
+                <p>We offer exceptional lead generation and outsourcing services, positioning us as the foremost provider of B2C and B2B leads in the USA.</p>
 
-<!-- ===== PARTNERS ===== -->
-<section class="partners">
-	<div class="container">
-		<h2 style="font-size:28px; font-weight:700;">Our <span style="color:#B0963F;">Partners</span></h2>
-		<p style="color:#666; margin-bottom:10px;">Companies we have worked with</p>
-		<div class="partner-logos">
-			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' fill='%23eee'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='14' fill='%23999'%3EPartner 1%3C/text%3E%3C/svg%3E" alt="Partner">
-			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' fill='%23eee'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='14' fill='%23999'%3EPartner 2%3C/text%3E%3C/svg%3E" alt="Partner">
-			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' fill='%23eee'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='14' fill='%23999'%3EPartner 3%3C/text%3E%3C/svg%3E" alt="Partner">
-			<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' fill='%23eee'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='14' fill='%23999'%3EPartner 4%3C/text%3E%3C/svg%3E" alt="Partner">
-		</div>
-	</div>
-</section>
+                <div class="hero-stats">
+                    <div>
+                        <div class="number">12+</div>
+                        <div class="label">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="number">50K+</div>
+                        <div class="label">Leads Delivered</div>
+                    </div>
+                    <div>
+                        <div class="number">99%</div>
+                        <div class="label">Satisfaction Rate</div>
+                    </div>
+                </div>
 
-<!-- ===== CONTACT BAR ===== -->
-<section class="contact-bar">
-	<div class="container">
-		<h2>Get In <span>Touch</span></h2>
-		<div class="contact-info">
-			<div><i>??</i> +1 (917) 720-3759</div>
-			<div><i>??</i> info@vibeGenX.com</div>
-			<div><i>??</i> Olive Street, Evansville, Indiana 47714</div>
-		</div>
-	</div>
-</section>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/92313056221?text=Hi%20vibeGenX%2C%20I%20want%20to%20know%20more%20about%20your%20lead%20generation%20services" target="_blank" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <a href="#contact" class="btn-primary">Get in Contact</a>
+                </div>
+            </div>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-	<div class="container">
-		<div class="footer-grid">
-			<div>
-				<h3>About Us</h3>
-				<p style="color:#aaa; font-size:14px;">vibeGenX is a premier lead generation provider delivering exclusive B2C and B2B leads across the USA.</p>
-			</div>
-			<div>
-				<h3>Services</h3>
-				<ul>
-					<li><a href="#">Auto Insurance Leads</a></li>
-					<li><a href="#">Home Insurance Leads</a></li>
-					<li><a href="#">Health Insurance Leads</a></li>
-					<li><a href="#">Medicare Leads</a></li>
-				</ul>
-			</div>
-			<div>
-				<h3>Blogs</h3>
-				<ul>
-					<li><a href="#">Maximizing Lead Generation</a></li>
-					<li><a href="#">Quality Over Quantity</a></li>
-					<li><a href="#">Emerging Trends in Insurance</a></li>
-				</ul>
-			</div>
-			<div>
-				<h3>Company</h3>
-				<ul>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Lead Pricing</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			All Rights Reserved © Copyright 2025 | vibeGenX
-		</div>
-	</div>
-</footer>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=400&fit=crop&crop=center" alt="vibeGenX Call Center Team">
+                <div class="hero-image-badge">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        Live Support <br>
+                        <small>24/7 Available</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-	// Simple FAQ Toggle
-	document.querySelectorAll('.faq-item').forEach(item => {
-		item.addEventListener('click', function() {
-			this.classList.toggle('active');
-		});
-	});
-</script>
+    <!-- ============================================================
+    TRUST BAR
+    ============================================================ -->
+    <div class="trust-bar">
+        <div class="container trust-bar-inner">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='20' y='20' font-family='Arial' font-size='12' fill='%23999'%3ETrusted Partner 1%3C/text%3E%3C/svg%3E" alt="Trusted Partner">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='20' y='20' font-family='Arial' font-size='12' fill='%23999'%3ETrusted Partner 2%3C/text%3E%3C/svg%3E" alt="Trusted Partner">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='20' y='20' font-family='Arial' font-size='12' fill='%23999'%3ETrusted Partner 3%3C/text%3E%3C/svg%3E" alt="Trusted Partner">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='20' y='20' font-family='Arial' font-size='12' fill='%23999'%3ETrusted Partner 4%3C/text%3E%3C/svg%3E" alt="Trusted Partner">
+        </div>
+    </div>
+
+    <!-- ============================================================
+    SERVICES
+    ============================================================ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub">What We Offer</span>
+                <h2>Leads we offer are <span>verified &amp; exclusive</span></h2>
+                <p>We provide real-time, exclusive leads across multiple insurance verticals with high conversion rates.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="icon">🚗</span>
+                    <h3>Auto Insurance Leads</h3>
+                    <p>High-intent consumers actively seeking auto insurance. Real-time &amp; verified.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <span class="icon">🏠</span>
+                    <h3>Home Insurance Leads</h3>
+                    <p>Top-notch home insurance leads and calls from genuine homeowners.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <span class="icon">💼</span>
+                    <h3>Final Expense Leads</h3>
+                    <p>Consumers interested in final expense insurance with high intent to buy.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <span class="icon">❤️</span>
+                    <h3>Health Insurance Leads</h3>
+                    <p>Genuinely interested health insurance consumers looking for the best plans.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <span class="icon">🏥</span>
+                    <h3>Medicare Leads</h3>
+                    <p>Medicare agents drive success with our high-quality, exclusive leads.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <span class="icon">📋</span>
+                    <h3>ACA Insurance Leads</h3>
+                    <p>Find the best ACA plan for your needs with our targeted leads.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <span class="icon">🛡️</span>
+                    <h3>MVA Insurance Leads</h3>
+                    <p>Explore MVA insurance options with our exclusive, verified leads.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <span class="icon">🔧</span>
+                    <h3>Home Warranty Leads</h3>
+                    <p>Real-time leads matched to your exact filters for maximum efficiency.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT / FEATURES
+    ============================================================ -->
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&h=400&fit=crop&crop=center" alt="vibeGenX Call Center Team">
+            </div>
+            <div class="about-content">
+                <span class="sub">About vibeGenX</span>
+                <h2>Lead Generation &amp; <span>Live Transfers</span> 24/7</h2>
+                <p>We offer exceptional lead generation and outsourcing services, positioning us as the foremost provider of B2C and B2B leads in the USA.</p>
+
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Qualified Leads &amp; Live Transfer — Quality is Our Priority</li>
+                    <li><i class="fas fa-check-circle"></i> Free marketing training and unparalleled Tech support</li>
+                    <li><i class="fas fa-check-circle"></i> 100% Exclusive Leads — No sharing with competitors</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time delivery with instant lead matching</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FAQ SECTION
+    ============================================================ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub">Get Answers</span>
+                <h2>Get Your <span>Questions Answered</span></h2>
+                <p>Everything you need to know about our lead generation services.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div>
+                    <div class="faq-item active">
+                        <h4>How are our insurance leads generated? <i class="fas fa-chevron-down"></i></h4>
+                        <p>We employ a multi-faceted approach including online marketing campaigns, targeted advertisements, and partnerships with trusted websites and lead generation platforms. This ensures a consistent flow of high-quality insurance leads for our clients.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What is the quality of our insurance leads? <i class="fas fa-chevron-down"></i></h4>
+                        <p>We utilize multiple data points and filters to assess interest levels, demographics, and specific insurance needs. This comprehensive approach delivers leads with a higher likelihood of conversion.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How do we ensure exclusivity of leads? <i class="fas fa-chevron-down"></i></h4>
+                        <p>Once a lead is sold to an agency, it is immediately withdrawn from our lead pool and never shared with any other agency. This guarantees you capitalize on the full potential of each lead.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What is our pricing structure? <i class="fas fa-chevron-down"></i></h4>
+                        <p>We operate on a per-lead basis, with pricing based on insurance type, exclusivity, and volume. We offer competitive pricing that aligns with the exceptional quality of our leads.</p>
+                    </div>
+                </div>
+                <div class="faq-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center" alt="Customer Support">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PARTNERS
+    ============================================================ -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub">Our Partners</span>
+                <h2>Companies we <span>Worked with</span></h2>
+            </div>
+            <div class="partner-logos">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='25' y='20' font-family='Arial' font-size='12' fill='%23999'%3EPartner 1%3C/text%3E%3C/svg%3E" alt="Partner">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='25' y='20' font-family='Arial' font-size='12' fill='%23999'%3EPartner 2%3C/text%3E%3C/svg%3E" alt="Partner">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='25' y='20' font-family='Arial' font-size='12' fill='%23999'%3EPartner 3%3C/text%3E%3C/svg%3E" alt="Partner">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='25' y='20' font-family='Arial' font-size='12' fill='%23999'%3EPartner 4%3C/text%3E%3C/svg%3E" alt="Partner">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Crect width='120' height='30' fill='%23ddd'/%3E%3Ctext x='25' y='20' font-family='Arial' font-size='12' fill='%23999'%3EPartner 5%3C/text%3E%3C/svg%3E" alt="Partner">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT / CTA
+    ============================================================ -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Grow Your Business? <span>Let's Talk!</span></h2>
+            <p>Get started with exclusive, high-quality leads today. Our team is here to help you 24/7.</p>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/92313056221?text=Hi%20vibeGenX%2C%20I%20want%20to%20start%20getting%20leads" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Now
+                </a>
+                <a href="#" class="btn-primary">Get in Contact</a>
+            </div>
+
+            <div class="cta-info">
+                <div><i class="fas fa-phone"></i> +1 (917) 720-3759</div>
+                <div><i class="fas fa-envelope"></i> info@vibeGenX.com</div>
+                <div><i class="fas fa-map-marker-alt"></i> Olive Street, Evansville, Indiana 47714</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:15px;">
+                        <div style="background:#f5a623; width:40px; height:40px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-weight:900; color:#fff; font-size:20px;">V</div>
+                        <span style="color:#fff; font-size:24px; font-weight:900;">vibe<span style="color:#f5a623;">GenX</span></span>
+                    </div>
+                    <p>We are the best B2C &amp; B2B leads provider in the USA. Lead provider is the best option for new and small call centers.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Life Insurance Leads</a></li>
+                        <li><a href="#">Auto Insurance Leads</a></li>
+                        <li><a href="#">Health Insurance Leads</a></li>
+                        <li><a href="#">Home Insurance Leads</a></li>
+                        <li><a href="#">Medicare Leads</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Blogs</h3>
+                    <ul>
+                        <li><a href="#">Maximizing Lead Generation</a></li>
+                        <li><a href="#">Quality Over Quantity</a></li>
+                        <li><a href="#">Emerging Trends in Insurance</a></li>
+                        <li><a href="#">Target Demographic Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Lead Pricing</a></li>
+                        <li><a href="#">Buy Leads</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                All Rights Reserved © Copyright 2025 | vibeGenX
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    FLOATING WHATSAPP BUTTON
+    ============================================================ -->
+    <a href="https://wa.me/92313056221?text=Hi%20vibeGenX%2C%20I%20want%20to%20know%20more" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script>
+        // ===== MOBILE MENU TOGGLE =====
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('open');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // ===== FAQ ACCORDION =====
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(other => {
+                    if (other !== this) {
+                        other.classList.remove('active');
+                    }
+                });
+                this.classList.toggle('active');
+            });
+        });
+
+        // ===== SMOOTH SCROLL FOR NAV LINKS =====
+        document.querySelectorAll('.nav-menu a, .hero-buttons a, .cta-buttons a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        // Close mobile menu
+                        navMenu.classList.remove('open');
+                        const icon = menuToggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                }
+            });
+        });
+
+        // ===== STICKY HEADER SHADOW ON SCROLL =====
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.4)';
+            } else {
+                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.3)';
+            }
+        });
+    </script>
 
 </body>
 </html>
